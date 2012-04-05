@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <head>
+    <title tal:content="title">
+      Place for the page title
+    </title>
+  </head>
+  <body>
+    <h1 tal:content="title">sample title</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Lingua</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr tal:repeat="lingue results">
+          <td tal:content="lingue/id_lingua">id_lingua</td>
+          <td tal:content="lingue/lingua">lingua</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
